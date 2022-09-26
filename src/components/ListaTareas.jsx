@@ -2,10 +2,14 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import ItemTarea from "./ItemTarea";
 
-const ListaTareas = () => {
-  return (
+const ListaTareas = ({arregloTareas}) => {
+    return (
+        //cuando tengamos muchos hijos hay q agregar el componente key
     <ListGroup>
-     <ItemTarea></ItemTarea>
+        {
+        arregloTareas.map((tarea, posicion)=><ItemTarea key={posicion} nombreTarea={tarea}></ItemTarea>)
+        }
+
     </ListGroup>
   );
 };
