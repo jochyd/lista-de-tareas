@@ -1,5 +1,6 @@
 import FormularioTareas from "./components/FormularioTareas";
 //importar la hoja de estilos
+import './app.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 

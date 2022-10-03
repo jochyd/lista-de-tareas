@@ -36,6 +36,7 @@ const FormularioTareas = () => {
       <Form className="my-5" onSubmit={handleSubmit}>
         <Form.Group className="mb-b d-flex" controlId="formTarea">
           {/* {este es el input} */}
+          <div className="caja" style={{'background': 'nombrevariable'}}></div>
           <Form.Control
             type="text"
             placeholder="Ingresa Tu Tarea"

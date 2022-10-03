@@ -7,11 +7,7 @@ const ListaTareas = ({ arregloTareas, borrarTarea }) => {
     //cuando tengamos muchos hijos hay q agregar el componente key
     <ListGroup>
       {arregloTareas.map((tarea, posicion) => (
-        <ItemTarea
-          key={posicion}
-          nombreTarea={tarea}
-          borrarTarea={borrarTarea}
-        ></ItemTarea>
+        <ItemTarea key={posicion} nombreTarea={tarea} borrarTarea={borrarTarea} ></ItemTarea>
       ))}
     </ListGroup>
   );
